@@ -52,9 +52,9 @@
 			               <li class="nav-item h-line">
 			               	<div>|</div>
 			               </li>
-			               <li class="nav-item position-relative">
+			               <li class="nav-item position-relative register-group">
 			               	<div class="text-uppercase f-14 btn-register">
-			               		<a href="#" class="c-gold">registration</a>	               	
+			               		<a href="#register" class="c-gold">registration</a>	               	
 			               	</div>
 			               	<div class="box-register"></div>
 			               </li>

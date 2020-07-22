@@ -3,15 +3,16 @@
 		<div><img src="<?= base_url('images/banner.jpg') ?>" alt=""></div>
 		<div><img src="<?= base_url('images/banner-2.jpg') ?>" alt=""></div>
 	</div>
-	<div class="design-concept pb-30">
+	<div class="design-concept pb-60">
 		<div class="container-fluid max-w-1600">
-			<div class="row ptb-30">
+			<div class="row ptb-60">
 				<div class="col-md-4 ff-trajan f-40">
 					<div class="title-icon"></div>
 					<div class="pl-5">
 						<span class="d-block l-height-40">design</span>
 						<span class="d-block l-height-40">concept</span>
 					</div>
+					<div class="h-line-220"></div>
 				</div>
 				<div class="col-md-8 text-uppercase">
 					<span class="c-gold">จากความสง่างามของกรุงปารีสที่โดดเด่นด้วยความเป็น "Stylish Elegance" สู่การออกแบบที่อยู่อาศัย "Elegant Stylish House”</span>
@@ -23,9 +24,9 @@
 			</div>
 		</div>
 	</div>
-	<div class="project-detail pb-30">
+	<div class="project-detail pb-60">
 		<div class="container-fluid max-w-1600">
-			<div class="row ptb-30">
+			<div class="row pb-60">
 				<div class="col-md-4 ff-trajan f-40">
 					<div class="title-icon"></div>
 					<div class="pl-5">
@@ -34,7 +35,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="row pb-30">
+			<div class="row pb-60">
 				<div class="col-md-5 text-right">
 					<h2>เริ่มต้นเพียง 28 ล้านบาท</h2>
 					<span class="d-block">เมซอง บลองซ์ ด้วยการออกแบบอย่างพิถีพิถัน</span>
@@ -48,7 +49,7 @@
 								<p>พื้นที่ขนาด</p>
 								<p>280- 450 ตรม.</p>
 							</div>
-							<div>
+							<div class="border-tb">
 								<p>บ้านสามชั้นครึ่ง 4 ห้องนอน</p>
 								<p>6 ห้องน้ำพร้อมห้องแม่บ้าน</p>
 							</div>
@@ -62,7 +63,7 @@
 								<p>มุมทำงาน</p>
 								<p>สำหรับหรูสง่า</p>
 							</div>
-							<div>
+							<div class="border-tb">
 								<p>ครัวฝรั่งและ</p>
 								<p>ครัวไทย</p>
 							</div>
@@ -79,13 +80,13 @@
 			<img src="<?= base_url('images/project-detail.jpg') ?>" alt="">
 		</div>
 	</div>
-	<div class="gallery pb-30">
+	<div class="gallery pb-60">
 		<div class="row m-0">
 			<div class="col-md-8">
 				<div class="row">
 					<?php for ($i=1; $i < 7; $i++) { ?>
-						<div class="col-md-4 p-0">
-							<img src="<?= base_url('images/gallery/g-'.$i.'.jpg') ?>" alt="">
+						<div class="col-md-4 p-0 zoom-in">
+							<img src="<?= base_url('images/gallery/g-'.$i.'.jpg') ?>">
 						</div>
 					<?php } ?>
 				</div>
@@ -105,7 +106,7 @@
 	</div>
 	<div class="service">
 		<div class="container-fluid max-w-1600">
-			<div class="row ptb-30">
+			<div class="row ptb-60">
 				<div class="col-md-4 ff-trajan f-40">
 					<div class="title-icon-white"></div>
 					<div class="pl-5 c-white">
@@ -118,28 +119,35 @@
 				</div>
 			</div>			
 		</div>
-		<div class="row service-img m-0 pb-30">
+		<div class="row service-img m-0 pb-60">
 			<div class="col-md-6">
-				<!-- <img src="<?= base_url('images/services/s-1.jpg') ?>" alt=""> -->
-				<div class="service-main" style="background-image: url('../../images/services/s-1.jpg')"></div>
+				<div class="zoom-in service-main">
+					<div class="service-main" style="background-image: url('../../images/services/s-1.jpg')"></div>
+				</div>
 			</div>
 			<div class="col-md-6">
 				<div class="row">
 					<div class="col-12 mb-4">
-						<img src="<?= base_url('images/services/s-2.jpg') ?>" alt="">
+						<div class="zoom-in">
+							<img src="<?= base_url('images/services/s-2.jpg') ?>" alt="">
+						</div>
 					</div>
 					<div class="col-md-6">
-						<img src="<?= base_url('images/services/s-3.jpg') ?>" alt="">
+						<div class="zoom-in">
+							<img src="<?= base_url('images/services/s-3.jpg') ?>" alt="">
+						</div>
 					</div>
 					<div class="col-md-6">
-						<img src="<?= base_url('images/services/s-4.jpg') ?>" alt="">
+						<div class="zoom-in">
+							<img src="<?= base_url('images/services/s-4.jpg') ?>" alt="">
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>		
 	</div>
-	<div class="promotion ptb-30">
-		<div class="ff-trajan f-40 d-flex max-w-320 pb-30">
+	<div class="promotion ptb-60">
+		<div class="ff-trajan f-40 d-flex max-w-320 pb-60">
 			<div style="max-width: 26px;">
 				<img src="<?= base_url('images/icons/list.png') ?>" alt="">
 			</div>
@@ -147,10 +155,10 @@
 				<span class="d-block l-height-60">promotions</span>
 			</div>
 		</div>
-		<div class="fontainer-fluid promotion-box max-w-1600 p-3">
-			<div class="row">
-				<div class="col-md-4 c-white text-center">
-					<div class="p-5">
+		<div class="fontainer-fluid max-w-1600">
+			<div class="row promotion-box">
+				<div class="col-md-4 c-white text-center p-3">
+					<div class="p-3">
 						<h2>รับส่วนลดพิเศษ</h2>
 						<div class="under-line"></div>
 						<h2>ก่อนเปิดขายโครงการ</h2>
@@ -162,14 +170,14 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-8">
+				<div class="col-md-8 p-3">
 					<img src="<?= base_url('images/promotion.jpg') ?>" alt="">
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="map-location max-w-1600 pb-30">
-		<div class="row m-0">
+	<div class="map-location max-w-1600">
+		<div class="row m-0 pb-60">
 			<div class="col-md-8 pl-0 pr-5">
 				<img src="<?= base_url('images/map.jpg') ?>" alt="">
 			</div>
@@ -189,33 +197,35 @@
 			</div>
 		</div>
 	</div>
-	<div class="register max-w-1600 pb-30">
-		<div class="row m-0">			
-			<div class="col-md-4">
-				<div class="title-icon"></div>
-				<div class="pl-5">
-					<span class="d-block l-height-40 ff-trajan f-40">Registration</span>
-					<p>ลงทะเบียนรับข่าวสารและ ข้อเสนอพิเศษก่อนใคร</p>
-				</div>
-			</div>
-			<div class="col-md-8">
-				<form id="frm_register" action="" method="">
-					<div class="row">
-						<div class="col-md-6">
-							<div class="form-group">
-								<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Name">
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="form-group">
-								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-							</div>
-						</div>
-						<div class="col-md-12 f-20">
-							<button type="submit" class="btn-sumit">SUBMIT</button>
-						</div>
+	<div class="register max-w-1600" id="register">
+		<div class="pb-60">
+			<div class="row m-0">			
+				<div class="col-md-4">
+					<div class="title-icon"></div>
+					<div class="pl-5">
+						<span class="d-block l-height-40 ff-trajan f-40">Registration</span>
+						<p>ลงทะเบียนรับข่าวสารและ ข้อเสนอพิเศษก่อนใคร</p>
 					</div>
-				</form>
+				</div>
+				<div class="col-md-8">
+					<form id="frm_register" action="" method="">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Name">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+								</div>
+							</div>
+							<div class="col-md-12 f-20">
+								<button type="submit" class="btn-sumit">SUBMIT</button>
+							</div>
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>

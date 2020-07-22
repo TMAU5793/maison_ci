@@ -7,6 +7,9 @@ a {
 .max-w-1600 {
   max-width: 1600px;
   margin: auto; }
+  @media (max-width: 1600px) {
+    .max-w-1600 {
+      padding: 0 90px !important; } }
 
 .max-w-320 {
   max-width: 320px;
@@ -69,8 +72,17 @@ a {
 .c-gray {
   color: #5a5a5a; }
 
+.ptb-90 {
+  padding: 90px 0; }
+
+.ptb-60 {
+  padding: 60px 0; }
+
 .ptb-30 {
   padding: 30px 0; }
+
+.pb-60 {
+  padding-bottom: 60px; }
 
 .pb-30 {
   padding-bottom: 30px; }
@@ -143,6 +155,12 @@ a {
   .btn-register a:hover {
     color: inherit; }
 
+.btn-register:hover {
+  visibility: visible;
+  background: #b48c54; }
+  .btn-register:hover a {
+    color: #ffffff; }
+
 .box-register {
   border: 1px solid #b48c54;
   position: absolute;
@@ -181,9 +199,11 @@ img {
 .lang .dropdown-menu {
   background-color: #b48c54;
   padding: 0;
-  right: 0;
+  right: 12px;
   left: unset;
   min-width: unset; }
+.lang .dropdown-item {
+  padding: 5px 10px; }
 .lang .dropdown-menu:hover {
   border: 1px solid #b48c54;
   background-color: transparent; }
@@ -228,6 +248,16 @@ img {
   font-size: 20px; }
 .home .register input:focus {
   box-shadow: 0 0 6px #b48c54; }
+.home .project-detail .col-md-5 h2 {
+  border-bottom: 1px solid #b48c54;
+  padding-bottom: 10px;
+  margin-bottom: 10px; }
+.home .project-detail .col-md-7 {
+  padding-left: 4rem; }
+  .home .project-detail .col-md-7 .col-md-6 {
+    padding: 0 3rem; }
+  .home .project-detail .col-md-7 .col-md-6:first-child {
+    border-right: 1px solid; }
 
 .title-icon {
   background-image: url("../images/icons/list.png");
@@ -248,11 +278,14 @@ img {
   top: 8px; }
 
 .gallery .col-md-8 .row {
-  padding-right: 15rem; }
+  padding-right: 6rem; }
+.gallery ul {
+  list-style: none;
+  padding: 0; }
 
 .center-x-bottom {
   position: absolute;
-  bottom: 0;
+  bottom: 15px;
   left: 50%;
   transform: translateX(-50%); }
 
@@ -292,5 +325,29 @@ footer {
     padding-right: 15px; }
   footer .copy-right {
     margin-top: 60px; }
+
+.h-line-220 {
+  width: 1px;
+  height: 220px;
+  background-color: #000000;
+  position: absolute;
+  bottom: -60px;
+  right: 50px; }
+
+.border-tb {
+  border-top: 1px solid #5a5a5a;
+  border-bottom: 1px solid #5a5a5a;
+  padding-top: 15px;
+  margin-bottom: 15px; }
+
+.zoom-in {
+  cursor: pointer;
+  overflow: hidden; }
+  .zoom-in img, .zoom-in div {
+    transition: all .5s; }
+
+.zoom-in:hover img, .zoom-in:hover div {
+  transition: all .5s;
+  transform: scale(1.1); }
 
 /*# sourceMappingURL=style.css.map */
