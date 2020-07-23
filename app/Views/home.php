@@ -83,23 +83,51 @@
 	<div class="gallery pb-60">
 		<div class="row m-0">
 			<div class="col-md-8">
-				<div class="row">
-					<?php for ($i=1; $i < 7; $i++) { ?>
-						<div class="col-md-4 p-0 zoom-in">
-							<img src="<?= base_url('images/gallery/g-'.$i.'.jpg') ?>">
+				<div class="tab-content" id="v-pills-tabContent">
+					<div class="tab-pane fade show active" id="exterior_content" role="tabpanel" aria-labelledby="exterior_tab">
+						<div class="row">
+							<?php for ($i=1; $i < 7; $i++) { ?>
+								<div class="col-md-4 p-0 zoom-in">
+									<a class="fancybox" data-fancybox="gallery" data-width="2048" data-height="" data-caption="" href="<?= base_url('images/gallery/g-'.$i.'.jpg') ?>" title="">
+										<img src="<?= base_url('images/gallery/g-'.$i.'.jpg') ?>">
+									</a>
+								</div>
+							<?php } ?>
 						</div>
-					<?php } ?>
+					</div>
+					<div class="tab-pane fade" id="interior_content" role="tabpanel" aria-labelledby="interior_tab">
+						<div class="row">
+							<?php for ($i=1; $i < 7; $i++) { ?>
+								<div class="col-md-4 p-0 zoom-in">
+									<a class="fancybox" data-fancybox="gallery" data-width="2048" data-height="" data-caption="" href="<?= base_url('images/gallery/g-'.$i.'.jpg') ?>" title="">
+										<img src="<?= base_url('images/gallery/g-'.$i.'.jpg') ?>">
+									</a>
+								</div>
+							<?php } ?>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="facilities_content" role="tabpanel" aria-labelledby="facilities_tab">
+						<div class="row">
+							<?php for ($i=1; $i < 7; $i++) { ?>
+								<div class="col-md-4 p-0 zoom-in">
+									<a class="fancybox" data-fancybox="gallery" data-width="2048" data-height="" data-caption="" href="<?= base_url('images/gallery/g-'.$i.'.jpg') ?>" title="">
+										<img src="<?= base_url('images/gallery/g-'.$i.'.jpg') ?>">
+									</a>
+								</div>
+							<?php } ?>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="col-md-4">
 				<div class="title-icon"></div>
 				<div class="pl-5">
-					<span class="d-block l-height-40 ff-trajan f-40">Gallery</span>
-					<ul class="f-20 pt-4">
-						<li>Exterior</li>
-						<li>Interior</li>
-						<li>Facilities</li>
-					</ul>
+					<span class="d-block l-height-40 ff-trajan f-40 mb-3">Gallery</span>
+					<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+						<a class="nav-link active" id="exterior_tab" data-toggle="pill" href="#exterior_content" role="tab" aria-controls="exterior_content" aria-selected="true">Exterior</a>
+						<a class="nav-link" id="interior_tab" data-toggle="pill" href="#interior_content" role="tab" aria-controls="interior_content" aria-selected="false">Interior</a>
+						<a class="nav-link" id="facilities_tab" data-toggle="pill" href="#facilities_content" role="tab" aria-controls="facilities_content" aria-selected="false">Facilities</a>
+					</div>
 				</div>
 			</div>
 		</div>

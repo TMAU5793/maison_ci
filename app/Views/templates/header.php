@@ -10,7 +10,9 @@
 	<link rel="stylesheet" href="<?=base_url('slick/slick-theme.css');?>">
 	<link rel="stylesheet" href="<?=base_url('fonts/trajan/font.css');?>">
 	<link rel="stylesheet" href="<?=base_url('fonts/anantason/font.css');?>">
+	<link rel="stylesheet" href="<?=base_url('fancy/jquery.fancybox.css'); ?>">
 	<script src="<?=base_url('js/jquery-3.5.1.min.js');?>"></script>
+	<script src="<?=base_url('fancy/jquery.fancybox.js'); ?>"></script>
 	<script src="<?=base_url('bootstrap/js/bootstrap.js');?>"></script>
 	<script src="<?=base_url('slick/slick.js');?>"></script>
 </head>
@@ -38,9 +40,9 @@
 			   <div class="navbar-brand">
 					 <div class="i-menu"><img src="<?=base_url('images/icons/menu.png')?>" alt=""></div>
 			   </div>
-			   <!--button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			       <span class="navbar-toggler-icon"></span>
-			   </!--button-->
+			   </button>
 			   <div class="row w-100 m-auto">
 			       <div class="col-md-4 h-icons">
 						 	<div class="show-menu"></div>
@@ -63,7 +65,7 @@
 			       </div>
 			       <div class="col-md-4 h-right">
 					 	<?php $lang = service('language')->getLocale()?>
-			           <ul class="ul-inline mid-right ff-trajan c-gold">
+			           	<ul class="ul-inline mid-right ff-trajan c-gold collapse navbar-collapse" id="navbarSupportedContent">
 			               <li class="nav-item dropdown f-20 lang">
 									<a class="dropdown-toggle lang-list ff-trajan-bold" href="javascript:void(0)" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 										<?=$lang?>
@@ -74,15 +76,29 @@
 										</a>
 									</div>
 			               </li>
-			               <li class="nav-item h-line">
+			               <li class="nav-item h-line hide-480">
 			               	<div>|</div>
 			               </li>
 			               <li class="nav-item position-relative register-group">
 			               	<div class="text-uppercase f-14 btn-register">
 			               		<a href="#register" class="c-gold">registration</a>
 			               	</div>
-			               	<div class="box-register"></div>
-			               </li>
+			               	<div class="box-register hide-480"></div>
+								</li>
+								<li class="show-480 social-icons">
+									<a href="https://www.facebook.com/maisonblanche67" target="_blank">
+										<div class="i-fb i-social-top"></div>
+									</a>
+									<a href="#">
+										<div class="i-ig i-social-top"></div>
+									</a>
+									<a href="#">
+										<div class="i-tw i-social-top"></div>
+									</a>
+									<a href="#">
+										<div class="i-yt i-social-top"></div>
+									</a>
+								</li>
 			           </ul>
 			       </div>
 			   </div>
