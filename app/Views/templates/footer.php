@@ -12,7 +12,11 @@
 					<div class="follow-up mt-5">
 						<label>Follow us</label>
 						<ul class="ul-inline">
-							<li><div class="i-fb i-social-bottom"></div></li>
+							<li>
+								<a href="https://www.facebook.com/maisonblanche67" target="_blank">
+									<div class="i-fb i-social-bottom"></div>
+								</a>
+							</li>
 							<li><div class="i-ig i-social-bottom"></div></li>
 							<li><div class="i-tw i-social-bottom"></div></li></li>
 							<li><div class="i-yt i-social-bottom"></div></li></li>

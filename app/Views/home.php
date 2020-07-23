@@ -1,4 +1,4 @@
-<section class="content home">
+<section class="content home header-top">
 	<div class="banner slick mb-0">
 		<div><img src="<?= base_url('images/banner.jpg') ?>" alt=""></div>
 		<div><img src="<?= base_url('images/banner-2.jpg') ?>" alt=""></div>
@@ -157,21 +157,21 @@
 		</div>
 		<div class="fontainer-fluid max-w-1600">
 			<div class="row promotion-box">
-				<div class="col-md-4 c-white text-center p-3">
-					<div class="p-3">
+				<div class="col-sm-5 col-md-4 c-white text-center p-3">
+					<div class="p-5">
 						<h2>รับส่วนลดพิเศษ</h2>
 						<div class="under-line"></div>
 						<h2>ก่อนเปิดขายโครงการ</h2>
 						<h2>สำหรับผู้ลงทะเบียน</h2>
 						<h2>400,000 บาท</h2>
-						<p>และแถม Build in Closet ทุกห้อง*</p>
-						<div class="logo-black center-x-bottom">
-							<img src="<?= base_url('images/logo-black.png') ?>" alt="">
-						</div>
+						<p class="f-14 pb-60">และแถม Build in Closet ทุกห้อง*</p>						
+					</div>
+					<div class="logo-black center-x-bottom">
+						<img src="<?= base_url('images/logo-black.png') ?>" alt="">
 					</div>
 				</div>
-				<div class="col-md-8 p-3">
-					<img src="<?= base_url('images/promotion.jpg') ?>" alt="">
+				<div class="col-sm-7 col-md-8 p-3">
+					<div class="promotion-box-img" style="background-image: url('../../images/promotion.jpg');"></div>
 				</div>
 			</div>
 		</div>

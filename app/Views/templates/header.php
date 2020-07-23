@@ -4,30 +4,52 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Maison Blanche</title>
-	<link rel="stylesheet" href="<?= base_url('css/style.css'); ?>">
-	<link rel="stylesheet" href="<?= base_url('bootstrap/css/bootstrap.css'); ?>">
-	<link rel="stylesheet" href="<?= base_url('slick/slick.css'); ?>">
-	<link rel="stylesheet" href="<?= base_url('slick/slick-theme.css'); ?>">
-	<link rel="stylesheet" href="<?= base_url('fonts/trajan/font.css'); ?>">
-	<link rel="stylesheet" href="<?= base_url('fonts/anantason/font.css'); ?>">
-	<script src="<?= base_url('js/jquery-3.5.1.min.js'); ?>"></script>
-	<script src="<?= base_url('bootstrap/js/bootstrap.js'); ?>"></script>
-	<script src="<?= base_url('slick/slick.js'); ?>"></script>
+	<link rel="stylesheet" href="<?=base_url('css/style.css');?>">
+	<link rel="stylesheet" href="<?=base_url('bootstrap/css/bootstrap.css');?>">
+	<link rel="stylesheet" href="<?=base_url('slick/slick.css');?>">
+	<link rel="stylesheet" href="<?=base_url('slick/slick-theme.css');?>">
+	<link rel="stylesheet" href="<?=base_url('fonts/trajan/font.css');?>">
+	<link rel="stylesheet" href="<?=base_url('fonts/anantason/font.css');?>">
+	<script src="<?=base_url('js/jquery-3.5.1.min.js');?>"></script>
+	<script src="<?=base_url('bootstrap/js/bootstrap.js');?>"></script>
+	<script src="<?=base_url('slick/slick.js');?>"></script>
 </head>
+<script>
+	$(function(){
+		var n=0;
+		$('.navbar-brand').click(function(){			
+			if(n == 0){
+				$('.show-menu').removeClass('slide-right');
+				$('.show-menu').addClass('slide-left');
+				$('.h-icons ul').css('visibility', 'visible');
+				n = 1;
+			}else{
+				$('.show-menu').removeClass('slide-left');
+				$('.show-menu').addClass('slide-right');
+				n = 0;
+			}
+		});
+	});
+</script>
 <body>
-	<section class="header">
+	<section class="header fixed-top">
 		<div class="container-fluid">
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			   <a class="navbar-brand" href="#">
-					 <div class="i-menu"><img src="<?= base_url('images/icons/menu.png') ?>" alt=""></div>
-			   </a>
-			   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			   <div class="navbar-brand">
+					 <div class="i-menu"><img src="<?=base_url('images/icons/menu.png')?>" alt=""></div>
+			   </div>
+			   <!--button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			       <span class="navbar-toggler-icon"></span>
-			   </button>
-			   <div class="row w-100">
+			   </!--button-->
+			   <div class="row w-100 m-auto">
 			       <div class="col-md-4 h-icons">
+						 	<div class="show-menu"></div>
 			           <ul class="ul-inline mid-left">
-			               <li><div class="i-fb i-social-top"></div></li>
+			               <li>
+									<a href="https://www.facebook.com/maisonblanche67" target="_blank">
+										<div class="i-fb i-social-top"></div>
+									</a>
+								</li>
 			               <li><div class="i-ig i-social-top"></div></li>
 			               <li><div class="i-tw i-social-top"></div></li></li>
 			               <li><div class="i-yt i-social-top"></div></li></li>
@@ -36,17 +58,20 @@
 			       </div>
 			       <div class="col-md-4 text-center">
 			           <div class="h-logo">
-			               <img src="<?= base_url('images/logo.png') ?>" alt="">
+			               <img src="<?=base_url('images/logo.png')?>" alt="">
 			           </div>
 			       </div>
 			       <div class="col-md-4 h-right">
+					 	<?php $lang = service('language')->getLocale()?>
 			           <ul class="ul-inline mid-right ff-trajan c-gold">
 			               <li class="nav-item dropdown f-20 lang">
-									<a class="dropdown-toggle lang-list ff-trajan-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									TH
+									<a class="dropdown-toggle lang-list ff-trajan-bold" href="javascript:void(0)" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<?=$lang?>
 									</a>
 									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-										<a class="dropdown-item ff-trajan-bold f-20" href="#">EN</a>
+										<a class="dropdown-item ff-trajan-bold f-20" href="<?=base_url('lang/' . ($lang == 'en' ? 'th' : 'en'));?>">
+											<?=($lang == 'en' ? 'TH' : 'EN');?>
+										</a>
 									</div>
 			               </li>
 			               <li class="nav-item h-line">
@@ -54,7 +79,7 @@
 			               </li>
 			               <li class="nav-item position-relative register-group">
 			               	<div class="text-uppercase f-14 btn-register">
-			               		<a href="#register" class="c-gold">registration</a>	               	
+			               		<a href="#register" class="c-gold">registration</a>
 			               	</div>
 			               	<div class="box-register"></div>
 			               </li>
