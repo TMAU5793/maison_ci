@@ -64,28 +64,57 @@
 			           </div>
 			       </div>
 			       <div class="col-md-4 h-right">
-					 	<?php $lang = service('language')->getLocale()?>
 			           	<ul class="ul-inline mid-right ff-trajan c-gold collapse navbar-collapse" id="navbarSupportedContent">
 			               <li class="nav-item dropdown f-20 lang">
 									<a class="dropdown-toggle lang-list ff-trajan-bold" href="javascript:void(0)" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										<?=$lang?>
+										<?= ($lang == 'th' ? 'TH' : 'EN'); ?>
 									</a>
 									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-										<a class="dropdown-item ff-trajan-bold f-20" href="<?=base_url('lang/' . ($lang == 'en' ? 'th' : 'en'));?>">
-											<?=($lang == 'en' ? 'TH' : 'EN');?>
+										<a class="dropdown-item ff-trajan-bold f-20" href="<?=base_url($lang == 'th' ? 'en' : 'th');?>">
+											<?= ($lang == 'th' ? 'EN' : 'TH'); ?>
 										</a>
 									</div>
 			               </li>
-			               <li class="nav-item h-line hide-480">
+			               <li class="nav-item h-line hide-991">
 			               	<div>|</div>
 			               </li>
 			               <li class="nav-item position-relative register-group">
-			               	<div class="text-uppercase f-14 btn-register">
-			               		<a href="#register" class="c-gold">registration</a>
+			               	<div class="text-uppercase btn-register <?= ($lang == 'th' ? 'f-18 ff-anantason' : 'f-14'); ?>">
+			               		<a href="#register" class="c-gold"><?=  $registerText ?></a>
 			               	</div>
-			               	<div class="box-register hide-480"></div>
+			               	<div class="box-register hide-991"></div>
 								</li>
-								<li class="show-480 social-icons">
+								<li class="show-991">
+									<div class="text-uppercase btn-register <?= ($lang == 'th' ? 'f-18 ff-anantason' : 'f-14'); ?>">
+			               		<a href="#concept" class="c-gold">design concept</a>
+			               	</div>
+								</li>
+								<li class="show-991">
+									<div class="text-uppercase btn-register <?= ($lang == 'th' ? 'f-18 ff-anantason' : 'f-14'); ?>">
+			               		<a href="#project" class="c-gold">project detail</a>
+			               	</div>
+								</li>
+								<li class="show-991">
+									<div class="text-uppercase btn-register <?= ($lang == 'th' ? 'f-18 ff-anantason' : 'f-14'); ?>">
+			               		<a href="#gallery-section" class="c-gold">Gallery</a>
+			               	</div>
+								</li>
+								<li class="show-991">
+									<div class="text-uppercase btn-register <?= ($lang == 'th' ? 'f-18 ff-anantason' : 'f-14'); ?>">
+			               		<a href="#service" class="c-gold">concierge service</a>
+			               	</div>
+								</li>
+								<li class="show-991">
+									<div class="text-uppercase btn-register <?= ($lang == 'th' ? 'f-18 ff-anantason' : 'f-14'); ?>">
+			               		<a href="#promotions" class="c-gold">promotions</a>
+			               	</div>
+								</li>
+								<li class="show-991">
+									<div class="text-uppercase btn-register <?= ($lang == 'th' ? 'f-18 ff-anantason' : 'f-14'); ?>">
+			               		<a href="#location" class="c-gold">location</a>
+			               	</div>
+								</li>
+								<li class="show-991 social-icons">
 									<a href="https://www.facebook.com/maisonblanche67" target="_blank">
 										<div class="i-fb i-social-top"></div>
 									</a>

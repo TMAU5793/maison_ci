@@ -106,7 +106,8 @@ a {
   background-color: #000000;
   padding: 15px 0;
   color: #ffffff;
-  border-bottom: 5px solid #b48c54; }
+  border-bottom: 5px solid #b48c54;
+  width: 100%; }
   .header .navbar {
     background-color: transparent !important; }
     @media (max-width: 480px) {
@@ -140,6 +141,10 @@ a {
     margin-top: 0 !important; }
     .header .i-menu img {
       max-width: 30px; }
+  @media (max-width: 991px) {
+    .header .h-right {
+      flex: 100% !important;
+      max-width: 100% !important; } }
   @media (max-width: 480px) {
     .header .h-right {
       padding: 0; } }
@@ -159,7 +164,7 @@ a {
   @media (max-width: 768px) {
     .header .h-right ul {
       right: 0; } }
-  @media (max-width: 480px) {
+  @media (max-width: 991px) {
     .header .h-right ul {
       position: inherit;
       top: unset;
@@ -172,7 +177,7 @@ a {
         margin-bottom: 15px; }
         .header .h-right ul li a {
           font-size: 18px !important; } }
-  @media (max-width: 480px) {
+  @media (max-width: 991px) {
     .header .h-right .social-icons a {
       float: left;
       padding-right: 15px; } }
@@ -307,7 +312,7 @@ a {
   @media (max-width: 768px) {
     .btn-register {
       font-size: 12px; } }
-  @media (max-width: 480px) {
+  @media (max-width: 991px) {
     .btn-register {
       padding: 0;
       border: none; } }
@@ -359,7 +364,7 @@ img {
   right: 12px;
   left: unset;
   min-width: unset; }
-  @media (max-width: 480px) {
+  @media (max-width: 991px) {
     .lang .dropdown-menu {
       top: -4px;
       left: 4rem;
@@ -660,13 +665,10 @@ footer {
   cursor: pointer; }
   @media (max-width: 991px) {
     .navbar-brand {
-      position: absolute;
-      z-index: 9999; } }
-  @media (max-width: 480px) {
-    .navbar-brand {
       display: none !important; } }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
   color: #b48c54 !important;
   background-color: transparent !important;
   font-family: 'TrajanBold'; }
@@ -678,12 +680,15 @@ footer {
 
 .navbar-light .navbar-toggler {
   outline: none !important; }
-  @media (max-width: 480px) {
+  @media (max-width: 991px) {
     .navbar-light .navbar-toggler {
       position: absolute;
       z-index: 9999;
-      top: 0;
+      top: 15px;
       padding: 0; } }
+  @media (max-width: 480px) {
+    .navbar-light .navbar-toggler {
+      top: 0; } }
 .navbar-light .navbar-toggler-icon {
   background-image: url("../images/icons/menu.png") !important;
   background-size: contain;
@@ -699,6 +704,18 @@ footer {
   display: none; }
   @media (max-width: 480px) {
     .show-480 {
+      display: block; } }
+
+.hide-991 {
+  display: block; }
+  @media (max-width: 991px) {
+    .hide-991 {
+      display: none; } }
+
+.show-991 {
+  display: none; }
+  @media (max-width: 991px) {
+    .show-991 {
       display: block; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -128,7 +128,7 @@ a {
 
 .ptb-60 {
     padding: 60px 0;
-    @include mediaQuery(480px){
+    @include mediaQuery(480px) {
         padding: 30px 0;
     }
 }
@@ -139,7 +139,7 @@ a {
 
 .pb-60 {
     padding-bottom: 60px;
-    @include mediaQuery(480px){
+    @include mediaQuery(480px) {
         padding-bottom: 30px;
     }
 }
@@ -153,6 +153,7 @@ a {
     padding: 15px 0;
     color: #ffffff;
     border-bottom: 5px solid $c-gold;
+    width: 100%;
     .navbar {
         background-color: transparent !important;
         @include mediaQuery(480px) {
@@ -196,6 +197,10 @@ a {
         }
     }
     .h-right {
+        @include mediaQuery(991px) {
+            flex: 100% !important;
+            max-width: 100% !important;
+        }
         @include mediaQuery(480px) {
             padding: 0;
         }
@@ -218,25 +223,25 @@ a {
             @include mediaQuery(768px) {
                 right: 0;
             }
-            @include mediaQuery(480px) {
+            @include mediaQuery(991px) {
                 position: inherit;
                 top: unset;
                 right: unset;
                 transform: unset;
                 margin-top: 2rem;
                 margin-bottom: 0;
-                li{
+                li {
                     float: none;
                     margin-bottom: 15px;
-                    a{
+                    a {
                         font-size: 18px !important;
                     }
                 }
             }
         }
-        .social-icons{
-            @include mediaQuery(480px) {
-                a{
+        .social-icons {
+            @include mediaQuery(991px) {
+                a {
                     float: left;
                     padding-right: 15px;
                 }
@@ -417,7 +422,7 @@ a {
     @include mediaQuery(768px) {
         font-size: 12px;
     }
-    @include mediaQuery(480px) {
+    @include mediaQuery(991px) {
         padding: 0;
         border: none;
     }
@@ -477,7 +482,7 @@ img {
         right: 12px;
         left: unset;
         min-width: unset;
-        @include mediaQuery(480px){
+        @include mediaQuery(991px) {
             top: -4px;
             left: 4rem;
             right: unset;
@@ -502,7 +507,7 @@ img {
             right: 4rem;
             bottom: 2rem;
             width: auto;
-            @include mediaQuery(480px){
+            @include mediaQuery(480px) {
                 right: 2rem;
             }
         }
@@ -648,7 +653,7 @@ img {
                 border-right: 1px solid;
                 @include mediaQuery(480px) {
                     border-right: none;
-                    div:last-child{
+                    div:last-child {
                         border-bottom: 1px solid;
                         margin-bottom: 15px;
                     }
@@ -888,48 +893,67 @@ footer {
 .navbar-brand {
     cursor: pointer;
     @include mediaQuery(991px) {
-        position: absolute;
-        z-index: 9999;
-    }
-    @include mediaQuery(480px) {
         display: none !important;
     }
 }
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
     color: $c-gold !important;
     background-color: transparent !important;
     font-family: 'TrajanBold';
 }
-.nav-pills .nav-link{
+
+.nav-pills .nav-link {
     color: $c-black;
     font-family: 'TrajanRegular';
     padding: .5rem 0;
 }
-.navbar-light{
-    .navbar-toggler{
+
+.navbar-light {
+    .navbar-toggler {
         outline: none !important;
-        @include mediaQuery(480px){
+        @include mediaQuery(991px) {
             position: absolute;
             z-index: 9999;
-            top: 0;
+            top: 15px;
             padding: 0;
         }
+        @include mediaQuery(480px) {
+            top: 0;
+        }
     }
-    .navbar-toggler-icon{
-        background-image:url('../images/icons/menu.png') !important;
+    .navbar-toggler-icon {
+        background-image: url('../images/icons/menu.png') !important;
         background-size: contain;
         background-repeat: no-repeat;
     }
 }
-.hide-480{
+
+.hide-480 {
     display: block;
-    @include mediaQuery(480px){
+    @include mediaQuery(480px) {
         display: none;
     }
 }
-.show-480{
+
+.show-480 {
     display: none;
-    @include mediaQuery(480px){
+    @include mediaQuery(480px) {
+        display: block;
+    }
+}
+
+.hide-991 {
+    display: block;
+    @include mediaQuery(991px) {
+        display: none;
+    }
+}
+
+.show-991 {
+    display: none;
+    @include mediaQuery(991px) {
         display: block;
     }
 }

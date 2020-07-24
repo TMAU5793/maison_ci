@@ -3,7 +3,7 @@
 		<div><img src="<?= base_url('images/banner.jpg') ?>" alt=""></div>
 		<div><img src="<?= base_url('images/banner-2.jpg') ?>" alt=""></div>
 	</div>
-	<div class="design-concept pb-60" id="concept">
+	<div class="design-concept pb-60">
 		<div class="container-fluid max-w-1600">
 			<div class="row ptb-60">
 				<div class="col-md-4 ff-trajan f-40">
@@ -15,8 +15,8 @@
 					<div class="h-line-220"></div>
 				</div>
 				<div class="col-md-8 text-uppercase">
-					<span class="c-gold">จากความสง่างามของกรุงปารีสที่โดดเด่นด้วยความเป็น "Stylish Elegance" สู่การออกแบบที่อยู่อาศัย "Elegant Stylish House”</span>
-					<span>บนโครงการ Maison Blanche (เมซอง บลองช) “บ้านเดี่ยวส่วนตัวใจกลางสุขุมวิท” ด้วยดีไซน์โมเดิร์นนีโอคลาสิค ที่ยังคงความสมบูรณ์แบบ หรูหรา และโดดเด่นแบบสไตล์ลีส ช่วยเติมเต็มในชีวิตยุคใหม่แบบ Exclusive บนพื้นที่ส่วนตัว 4 ห้องนอน 6 ห้องน้ำ ห้องแม่บ้าน สระว่ายน้ำ และมุมพิเศษ working from home ส่วนตัว เพื่อเป็นทั้งพื้นที่แห่งการพักผ่อน พื้นที่แห่งการอยู่อาศัยแบบสง่างาม มุมแห่งความครีเอทีฟ และยังเป็นพื้นที่ ที่สร้างความอบอุ่นได้อย่างดีที่สุด</span>
+					<span class="c-gold">From the elegance of Paris that stands out from the "STYLISH ELEGANCE" to the "ELEGANT STYLISH HOUSE"</span>
+					<span>housing design on the MAISON BLANCHE project (Maison Blanc), "Private detached house in the heart of Sukhumvit" with modern design. Neo Classic Which is still perfect, luxurious and outstanding in a style Fulfill your life with EXCLUSIVE new life on the private space. 4 bedrooms, 6 bathrooms, maid's room, swimming pool and a special corner. WORKING FROM HOME Private to be a space of relaxation. Elegant living space Creative corner And is also an area That creates the best warmth</span>
 				</div>
 			</div>
 			<div class="design-concept-img">
@@ -24,7 +24,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="project-detail pb-60" id="project">
+	<div class="project-detail pb-60">
 		<div class="container-fluid max-w-1600">
 			<div class="row pb-60">
 				<div class="col-md-4 ff-trajan f-40">
@@ -37,10 +37,10 @@
 			</div>
 			<div class="row pb-60">
 				<div class="col-md-5 text-right">
-					<h2>เริ่มต้นเพียง 28 ล้านบาท</h2>
-					<span class="d-block">เมซอง บลองซ์ ด้วยการออกแบบอย่างพิถีพิถัน</span>
-					<span class="d-block">และใช้วัสดุคุณภาพ คือบ้านในฝันกลางเมือง</span>
-					<span class="d-block">ที่แห่งความปรารถนาอย่างแท้จริง</span>
+					<h2>Starting at only 28 million baht</h2>
+					<span class="d-block">Maison Blanc with meticulous design</span>
+					<span class="d-block">And use quality materials Is a dream house in the city</span>
+					<span class="d-block">A place of true desire</span>
 				</div>
 				<div class="col-md-7">
 					<div class="row">
@@ -80,7 +80,7 @@
 			<img src="<?= base_url('images/project-detail.jpg') ?>" alt="">
 		</div>
 	</div>
-	<div class="gallery pb-60" id="gallery-section">
+	<div class="gallery pb-60">
 		<div class="row m-0">
 			<div class="col-md-8">
 				<div class="tab-content" id="v-pills-tabContent">
@@ -132,7 +132,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="service" id="service">
+	<div class="service">
 		<div class="container-fluid max-w-1600">
 			<div class="row ptb-60">
 				<div class="col-md-4 ff-trajan f-40">
@@ -174,7 +174,7 @@
 			</div>
 		</div>		
 	</div>
-	<div class="promotion ptb-60" id="promotions">
+	<div class="promotion ptb-60">
 		<div class="ff-trajan f-40 d-flex max-w-320 pb-60">
 			<div style="max-width: 26px;">
 				<img src="<?= base_url('images/icons/list.png') ?>" alt="">
@@ -204,7 +204,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="map-location max-w-1600" id="location">
+	<div class="map-location max-w-1600">
 		<div class="row m-0 pb-60">
 			<div class="col-md-8 pl-0 pr-5">
 				<img src="<?= base_url('images/map.jpg') ?>" alt="">

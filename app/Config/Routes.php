@@ -31,7 +31,8 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-$routes->get('/lang/{locale}', 'Lang::index');
+$routes->get('/th', 'Home::index');
+$routes->get('/en', 'Home::langEnlish');
 
 /**
  * --------------------------------------------------------------------
